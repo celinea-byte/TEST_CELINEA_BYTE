@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end; /* Align iframe to bottom right */
-            align-items: flex-end; /* Align iframe to bottom right */
-            min-height: 100vh; /* Ensure full viewport height */
-        }
-        iframe {
-            width: 300px; /* Adjust width as needed */
-            height: 400px; /* Adjust height as needed */
-            position: fixed;
-            bottom: 20px; /* Distance from the bottom */
-            right: 20px; /* Distance from the right */
-            border: none;
-        }
-    </style>
-    <title>Tidio Chatbot</title>
-</head>
+<style>
+.tidio-chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    max-width: 400px;
+}
+</style>
+<div class="tidio-chat-container">
+    <script src="//code.tidio.co/kmslqdixafpvt1ihmq3nvnims4qmoziq.js" async></script>
+</div>
 <body>
     <iframe src="https://celinea-byte.github.io/TEST_CELINEA_BYTE/tidio.html"></iframe>
 </body>
